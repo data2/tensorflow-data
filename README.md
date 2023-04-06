@@ -14,6 +14,9 @@ python安装过程中，选择加入环境变量 & 关闭window路径限长（di
 
 pip install tensorflow-cpu==2.6.0 -i https://pypi.tuna.tsinghua.edu.cn/simple
 
+## 测试tensorflow
+
+![image](https://user-images.githubusercontent.com/13504729/230268366-bbd3c479-f90d-47e0-9e14-0830d9dcb107.png)
 
 
 
