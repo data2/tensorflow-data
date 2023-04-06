@@ -12,7 +12,7 @@ python安装过程中，选择加入环境变量 & 关闭window路径限长（di
 
 ## setup tensorflow
 
-pip install tensorflow-gpu==2.6.0 -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install tensorflow-cpu==2.6.0 -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 
 
