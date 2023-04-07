@@ -1,4 +1,4 @@
 
 ## 安装
 
- pip install object_detection
+pip install object_detection
