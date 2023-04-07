@@ -13,6 +13,7 @@ from PIL import Image
 import numpy as np
 
 
+
 #---------------------------载入数据及预处理---------------------------
 # 下载MNIST数据 
 # X shape(60000, 28*28) y shape(10000, )
@@ -53,7 +54,7 @@ check_path = os.path.abspath(os.path.dirname( __file__)) +  '\\cnn\\ckpt2\\cp-{e
 save_model_cb = tf.keras.callbacks.ModelCheckpoint(check_path, save_weights_only=True, verbose=1)
 
 print("Training")
-model.fit(X_train, y_train, epochs=2, batch_size=32, callbacks=[save_model_cb])    # 训练次数及每批训练大小
+model.fit(X_train, y_train, epochs=1000, batch_size=50000, callbacks=[save_model_cb])    # 训练次数及每批训练大小
 print("Testing")
 loss, accuracy = model.evaluate(X_test, y_test)
 
@@ -65,13 +66,18 @@ print("accuracy:", accuracy)
 
 
 latest = tf.train.latest_checkpoint('.\\cnn\\ckpt2')
-# 恢复网络权重
+# # 恢复网络权重
 model.load_weights(latest)
 
-image_path = ".\\test_images\\7.png"
+
+
+
+image_path = ".\\test_images\\3.png"
 
 img = Image.open(image_path)
+img.show()
 img = img.convert('L').resize((28, 28))
+img.show()
 img_array = np.array(img)
 # 将像素值转换为0-1之间的浮点数
 img_array = img_array.astype('float32') / 255.0
