@@ -34,7 +34,7 @@ pip install numpy==1.19.2
 
 ![image](https://user-images.githubusercontent.com/13504729/230704733-f3bb9423-77dc-4b11-ab16-b7f94b42d530.png)
 
-此时需要安装visual c++ 14.0，,可以去微软下载安装 https://learn.microsoft.com/zh-CN/cpp/windows/latest-supported-vc-redist?view=msvc-170
+此时需要安装visual c++ 14.0，,可以去微软下载安装 https://learn.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170
 
 安装完后再 pip install numpy==1.19.2
 
