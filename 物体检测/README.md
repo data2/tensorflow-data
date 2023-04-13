@@ -12,6 +12,20 @@ https://github.com/tensorflow/models
 
 git clone git@github.com:tensorflow/models.git
 
+
+tf 安装 Object Detection API 官方教程 https://www.tensorflow.org/hub/tutorials/tf2_object_detection?hl=zh-cn
+
+```
+
+git clone --depth 1 https://github.com/tensorflow/models
+
+sudo apt install -y protobuf-compiler
+cd models/research/
+protoc object_detection/protos/*.proto --python_out=.
+cp object_detection/packages/tf2/setup.py .
+python -m pip install .
+```
+
 ## 安装pycocotools
 
 进入到object_detection目录下执行谷歌官方tf2的官方demo
