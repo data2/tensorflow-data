@@ -26,6 +26,11 @@ cp object_detection/packages/tf2/setup.py .
 python -m pip install .
 ```
 
+安装成功
+
+![image](https://user-images.githubusercontent.com/13504729/231639137-0d6e1290-210c-43eb-9b17-52bd96f4471a.png)
+
+
 ## 安装pycocotools
 
 进入到object_detection目录下执行谷歌官方tf2的官方demo
