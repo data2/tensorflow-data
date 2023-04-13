@@ -5,6 +5,12 @@ import tensorflow as tf
 import numpy as np
 import matplotlib.pyplot as plt
 
+from PIL import Image
+
+
+
+
+
 print(tf.__version__)
 
 
@@ -138,28 +144,28 @@ def plot_value_array(i, predictions_array, true_label):
 
 # Plot the first X test images, their predicted labels, and the true labels.
 # Color correct predictions in blue and incorrect predictions in red.
-num_rows = 5
-num_cols = 3
-num_images = num_rows*num_cols
-plt.figure(figsize=(2*2*num_cols, 2*num_rows))
-for i in range(num_images):
-  plt.subplot(num_rows, 2*num_cols, 2*i+1)
-  plot_image(i, predictions[i], test_labels, test_images)
-  plt.subplot(num_rows, 2*num_cols, 2*i+2)
-  plot_value_array(i, predictions[i], test_labels)
-plt.tight_layout()
-plt.show()
+# num_rows = 5
+# num_cols = 3
+# num_images = num_rows*num_cols
+# plt.figure(figsize=(2*2*num_cols, 2*num_rows))
+# for i in range(num_images):
+#   plt.subplot(num_rows, 2*num_cols, 2*i+1)
+#   plot_image(i, predictions[i], test_labels, test_images)
+#   plt.subplot(num_rows, 2*num_cols, 2*i+2)
+#   plot_value_array(i, predictions[i], test_labels)
+# plt.tight_layout()
+# plt.show()
 
 
 
 
 
 
+# img = test_images[1]
 
+image_path = ".\\test_images\\0.png"
 
-
-
-
+img = Image.open(image_path)
 
 img = test_images[1]
 
@@ -169,4 +175,4 @@ predictions_single = probability_model.predict(img)
 
 print(predictions_single)
 
-np.argmax(predictions_single[0])
+print(np.argmax(predictions_single[0]))
