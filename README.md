@@ -2,7 +2,7 @@
 
 # paddlepaddle
 
-# tensorflow-example
+# tensorflow
 
 # setup environment
 
