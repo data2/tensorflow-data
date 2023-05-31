@@ -1,10 +1,5 @@
-# pytorch
-
-# paddlepaddle
 
 # tensorflow
-
-# setup environment
 
 查看tensorflow与python的版本，然后确定各自安装版本。eg:python-3.9,tensorflow-2.6.0
 
@@ -52,6 +47,14 @@ pip install keras==2.6
 
 ![image](https://user-images.githubusercontent.com/13504729/230268366-bbd3c479-f90d-47e0-9e14-0830d9dcb107.png)
 
+
+# pytorch
+
+[pytorch安装指南](https://github.com/data2/tensorflow-pytorch-paddlepaddle/blob/main/pytorch.md)
+
+# paddlepaddle
+
+[paddlepaddle安装指南](https://github.com/data2/tensorflow-pytorch-paddlepaddle/blob/main/%E9%A3%9E%E6%B5%86/README.md)
 
 
 
