@@ -56,5 +56,9 @@ pip install keras==2.6
 
 [paddlepaddle安装指南](https://github.com/data2/tensorflow-pytorch-paddlepaddle/blob/main/%E9%A3%9E%E6%B5%86/README.md)
 
+管理员执行cmd
+
+cpu： pip install paddlepaddle
+
 
 
